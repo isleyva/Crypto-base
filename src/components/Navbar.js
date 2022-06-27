@@ -1,5 +1,6 @@
 import React from "react"
 import { Link } from "react-router-dom"
+import ThemeToggle from "./ThemeToggle"
 
 
 
@@ -9,7 +10,9 @@ function Navbar() {
         <Link to="/"> 
             <h1>Cryptobase</h1>
         </Link>
-    
+        <div>
+        <ThemeToggle/>
+            </div>
     
     </div>
   )
