@@ -8,8 +8,9 @@ export default function ThemeToggle() {
     return (
     <div>
         {theme === 'dark' ? (
-            <div><HiSun/>Light Mode</div>
-        ) : ( <div><HiMoon/>Dark Mode</div>)}
+            <div onClick={()=> setTheme(theme === "dark" ? "light" : "dark")}><HiSun/>Light Mode</div>
+        ) : ( 
+            <div onClick={()=> setTheme(theme === "dark" ? "light" : "dark")}><HiMoon/>Dark Mode</div>)}
    
    </div>
   )
