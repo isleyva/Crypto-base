@@ -34,6 +34,14 @@ function Navbar() {
                 <ThemeToggle/>
               </li>
             </ul>
+            <div>
+            <Link to="/singin">
+              <button className="">Sing In</button>
+            </Link>
+            <Link to="/singup">
+              <button className="">Sing Up</button>
+            </Link>
+            </div>
            </div>
     </div>
   )
