@@ -6,7 +6,7 @@ import { AiOutlineMenu } from "react-icons/ai"
 
 function Navbar() {
   return (
-    <div>
+    <div className="rounded-div flex items-center justify-between h-20 font-bold">
         <Link to="/"> 
             <h1>Cryptobase</h1>
         </Link>
