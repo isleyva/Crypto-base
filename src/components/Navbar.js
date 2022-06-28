@@ -12,7 +12,11 @@ function Navbar() {
         </Link>
         <div>
         <ThemeToggle/>
-            </div>
+        </div>
+       <div>
+        <Link to="/singin">Sing In</Link>
+       <Link to="/singup">Sing Up</Link>
+        </div> 
     
     </div>
   )
