@@ -22,6 +22,19 @@ function Navbar() {
             <AiOutlineMenu className="text-primary text-2xl mr-2" />
            </div>
            {/* Mobile Menu */}
+           <div>
+            <ul>
+              <li>
+                <Link to="/">Home</Link>
+              </li>
+              <li>
+                <Link to="/">Account</Link>
+              </li>
+              <li>
+                <ThemeToggle/>
+              </li>
+            </ul>
+           </div>
     </div>
   )
 }
