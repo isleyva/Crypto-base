@@ -6,6 +6,7 @@ import Home from "./routes/Home";
 import Singin from "./routes/Singin";
 import Singup from "./routes/Singup";
 import Account from "./routes/Account";
+import axios from "axios";
 
 
 function App() {
