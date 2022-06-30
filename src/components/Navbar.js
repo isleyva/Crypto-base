@@ -1,7 +1,7 @@
 import React, { useState } from "react"
 import { Link } from "react-router-dom"
 import ThemeToggle from "./ThemeToggle"
-import { AiOutlineMenu } from "react-icons/ai"
+import { AiOutlineMenu, AiOutlineClose } from "react-icons/ai"
 
 
 function Navbar() {
@@ -24,11 +24,14 @@ function Navbar() {
        <Link to="/singup" className="bg-button text-btnText px-5 py-2 ml-2 rounded-2xl shadow-lg hover:shadow-2xl">Sing Up</Link>
         </div> 
           {/* Menu icons */}
-          <div className="block md:hidden cursor-pointer z-10">
-            <AiOutlineMenu />
+          <div onClick={handleNav} className="block md:hidden cursor-pointer z-10">
+            {nav ? <AiOutlineClose  size={20}/> : <AiOutlineMenu  size={20}/>}
            </div>
            {/* Mobile Menu */}
-           <div className="md:hidden fixed left-0 top-20 flex flex-col items-center justify-between w-full h-[90%] bg-primary ease-in duration-300 z-10">
+           <div className={nav ? "md:hidden fixed left-0 top-20 flex flex-col items-center justify-between w-full h-[90%] bg-primary ease-in duration-300 z-10" 
+           : "fixed left-[-100%] top-20 h-[90%] flex flex-col items-center justify-between ease-in duration-300"}>
+           
+          
             <ul className="w-full p-4">
               <li className="border-b py-6">
                 <Link to="/">Home</Link>
