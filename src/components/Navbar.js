@@ -1,10 +1,16 @@
-import React from "react"
+import React, { useState } from "react"
 import { Link } from "react-router-dom"
 import ThemeToggle from "./ThemeToggle"
 import { AiOutlineMenu } from "react-icons/ai"
 
 
 function Navbar() {
+  const [nav, setNav ] = useState(false)
+  
+  const handleNav = () => {
+    setNav(!nav)
+  }
+
   return (
     <div className="rounded-div flex items-center justify-between h-20 font-bold">
         <Link to="/"> 
