@@ -18,19 +18,19 @@ function Navbar() {
        <Link to="/singup" className="bg-button text-btnText px-5 py-2 ml-2 rounded-2xl shadow-lg hover:shadow-2xl">Sing Up</Link>
         </div> 
           {/* Menu icons */}
-          <div>
-            <AiOutlineMenu className="text-primary text-2xl mr-2" />
+          <div className="block md:hidden cursor-pointer z-10">
+            <AiOutlineMenu />
            </div>
            {/* Mobile Menu */}
-           <div className="hidden">
-            <ul>
-              <li>
+           <div className="md:hidden fixed left-0 top-20 flex flex-col items-center justify-between w-full h-[90%] bg-primary ease-in duration-300 z-10">
+            <ul className="w-full p-4">
+              <li className="border-b py-6">
                 <Link to="/">Home</Link>
               </li>
-              <li>
+              <li className="border-b py-6">
                 <Link to="/">Account</Link>
               </li>
-              <li>
+              <li className=" py-6">
                 <ThemeToggle/>
               </li>
             </ul>
