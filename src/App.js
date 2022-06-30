@@ -7,9 +7,12 @@ import Singin from "./routes/Singin";
 import Singup from "./routes/Singup";
 import Account from "./routes/Account";
 import axios from "axios";
+import { useState } from "react";
 
 
 function App() {
+  const [coins, setCoins] = useState([]);
+  
   return (
     <ThemeProvider>
       <Navbar />
