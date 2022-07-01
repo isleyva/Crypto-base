@@ -19,7 +19,8 @@ function App() {
     axios.get(url).then((response) => {
       setCoins(response.data)
     })
-  }, [])
+  }, [url])
+  
   return (
     <ThemeProvider>
       <Navbar />
