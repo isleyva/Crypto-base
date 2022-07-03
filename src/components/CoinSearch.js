@@ -22,6 +22,22 @@ const CoinSearch = ({coins}) => {
             <th>MKT</th>
             <th>Last 7 Days</th>
           </tr>
+          <tbody>
+            {coins.map((coin )=> (
+              <tr>
+                <td><img src={coin.image} alt={coin.name} /></td>
+                <td><img src={coin.image} alt={coin.name} /></td>
+                <td><img src={coin.image} alt={coin.name} /></td>
+                <td><img src={coin.image} alt={coin.name} /></td>
+                <td><img src={coin.image} alt={coin.name} /></td>
+                <td><img src={coin.image} alt={coin.name} /></td>
+                <td><img src={coin.image} alt={coin.name} /></td>
+                <td><img src={coin.image} alt={coin.name} /></td>
+                <td><img src={coin.image} alt={coin.name} /></td>
+                <td><img src={coin.image} alt={coin.name} /></td>
+              </tr>
+            ))}
+          </tbody>
         </table>
     </div>
   )
