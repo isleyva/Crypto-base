@@ -4,6 +4,8 @@ import CoinItem from "./CoinItem";
 
 
 const CoinSearch = ({ coins }) => {
+  
+  
   //console.log (coins)
   return (
     <div>
@@ -27,7 +29,7 @@ const CoinSearch = ({ coins }) => {
         </tr>
         <tbody>
           {coins.map((coin) => (
-            <CoinItem coin={coin}/>
+            <CoinItem key={coin.id}coin={coin}/>
           ))}
         </tbody>
       </table>
