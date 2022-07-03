@@ -2,11 +2,11 @@ import React from 'react'
 import CoinSearch from '../components/CoinSearch'
 
 
-const Home = (coins) => {
+const Home = (props) => {
  // console.log(coins) for debugging
   return (
     <div>
-        <CoinSearch coins={coins} />
+        <CoinSearch coins={props.coins} />
     </div>
   )
 }
