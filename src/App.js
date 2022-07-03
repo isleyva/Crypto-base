@@ -25,7 +25,7 @@ function App() {
     <ThemeProvider>
       <Navbar />
       <Routes>
-      <Route path="/" element={<Home />} /> 
+      <Route path="/" element={<Home coins={coins}/>} /> 
       <Route path="/singing" element={<Singin />} /> 
       <Route path="/singup" element={<Singup />} /> 
       <Route path="/account" element={<Account />} /> 
