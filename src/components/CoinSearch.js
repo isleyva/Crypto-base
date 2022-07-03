@@ -1,6 +1,7 @@
 import React from 'react'
 
-const CoinSearch = () => {
+const CoinSearch = ({coins}) => {
+  console.log (coins)
   return (
     <div>CoinSearch</div>
   )
