@@ -20,16 +20,16 @@ const CoinSearch = ({ coins }) => {
           />
         </form>
       </div>
-      <table>
+      <table className="w-full border-collapse text-center">
         <tr>
-          <th></th>
-          <th>#</th>
-          <th>Coin</th>
+          <th ></th>
+          <th className="px-4">#</th>
+          <th className="text-left">Coin</th>
           <th></th>
           <th>Price</th>
           <th>24h</th>
-          <th>24h</th>
-          <th>MKT</th>
+          <th className="hidden md:table-cell">24h</th>
+          <th className="hidden sm:table-cell">MKT</th>
           <th>Last 7 Days</th>
         </tr>
         <tbody>
