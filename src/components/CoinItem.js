@@ -4,7 +4,7 @@ import {Sparklines, SparklinesLine} from "react-sparklines";
 
 const CoinItem = ({coin}) => {
   return (
-    <tr>
+    <tr className='h-[80px] border-b overflow-hidden'>
               <td>
                 <AiOutlineStar />
               </td>
@@ -12,9 +12,9 @@ const CoinItem = ({coin}) => {
                 {coin.market_cap_rank}
               </td>
               <td>
-                <div>
-                  <img src={coin.image} alt={coin.name} />
-                  <p>{coin.name}</p>
+                <div className='flex items-center'>
+                  <img className="w-6 mr-2 rounded-full" src={coin.image} alt={coin.name} />
+                  <p className="hidden sm:table-cell">{coin.name}</p>
                 </div>
               </td>
               <td>
