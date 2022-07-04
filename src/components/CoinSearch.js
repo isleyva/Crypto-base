@@ -21,7 +21,8 @@ const CoinSearch = ({ coins }) => {
         </form>
       </div>
       <table className="w-full border-collapse text-center">
-        <tr>
+        <thead>
+        <tr className="border-b">
           <th ></th>
           <th className="px-4">#</th>
           <th className="text-left">Coin</th>
@@ -32,6 +33,7 @@ const CoinSearch = ({ coins }) => {
           <th className="hidden sm:table-cell">MKT</th>
           <th>Last 7 Days</th>
         </tr>
+        </thead>
         <tbody>
           {coins
             .filter((value) => {
