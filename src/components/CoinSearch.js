@@ -1,10 +1,10 @@
 import React from "react";
-
+import { useState } from "react";
 import CoinItem from "./CoinItem";
 
 
 const CoinSearch = ({ coins }) => {
-  
+  const [serachText, setSearchText] = useState("");
   
   //console.log (coins)
   return (
