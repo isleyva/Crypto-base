@@ -8,7 +8,7 @@ const CoinSearch = ({ coins }) => {
   
   //console.log (coins)
   return (
-    <div>
+    <div className="rounded-div">
       <div>
         <h1>Search Crypto</h1>
         <form>
