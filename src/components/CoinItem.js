@@ -24,12 +24,12 @@ const CoinItem = ({coin}) => {
                 {coin.current_price}
               </td>
               <td>
-                {coin.price_change_percentaje_24h}
+                {coin.price_change_percentage_24h}
               </td>
-              <td>
+              <td className='w-[180px] hidden md:table-cell'>
                {coin.total_volume}
               </td>
-              <td>
+              <td className='w-[180px] hidden sm:table-cell'>
                 {coin.market_cap}
               </td>
               <td>
