@@ -28,7 +28,13 @@ const CoinSearch = ({ coins }) => {
           <th>Last 7 Days</th>
         </tr>
         <tbody>
-          {coins.map((coin) => (
+          {coins.filter((value) => {
+            if (serachText === "") {
+              return value;
+          } else if (value.name.toLowerCase().includes(serachText.toLowerCase())) {
+            return value;
+          }
+          }).map((coin) => (
             <CoinItem key={coin.id}coin={coin}/>
           ))}
         </tbody>
