@@ -24,7 +24,8 @@ const CoinItem = ({coin}) => {
                 {coin.current_price}
               </td>
               <td>
-                {coin.price_change_percentage_24h}
+                {coin.price_change_percentage_24h > 0 ? (<p className='text-green-600'> {coin.price_change_percentage_24h}</p>): (<p className='text-red-600'> {coin.price_change_percentage_24h}</p>)}
+               
               </td>
               <td className='w-[180px] hidden md:table-cell'>
                {coin.total_volume}
