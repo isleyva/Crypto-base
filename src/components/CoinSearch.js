@@ -12,7 +12,7 @@ const CoinSearch = ({ coins }) => {
       <div>
         <h1>Search Crypto</h1>
         <form>
-          <input type="text" name="search" placeholder="Search for a coin..." />
+          <input onChange={(e)=> setSearchText(e.target.value)} type="text" name="search" placeholder="Search for a coin..." />
         </form>
       </div>
       <table>
