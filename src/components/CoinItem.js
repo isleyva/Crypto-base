@@ -20,7 +20,7 @@ const CoinItem = ({ coin }) => {
         </div>
       </td>
       <td>{coin.symbol.toUpperCase()}</td>
-      <td>{coin.current_price}</td>
+      <td>${coin.current_price.toLocaleString()}</td>
       <td>
         {coin.price_change_percentage_24h > 0 ? (
           <p className="text-green-600"> {coin.price_change_percentage_24h}</p>
