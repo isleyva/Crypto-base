@@ -9,7 +9,7 @@ const Trending = () => {
   useEffect(() => {
     axios.get(url).then((response) => {
       setTrending(response.data.coins);
-      console.log(response.data.coins);
+      //console.log(response.data.coins);
     });
   }, []);
   return (
@@ -17,7 +17,7 @@ const Trending = () => {
       <h1>Trending coins</h1>
       <div>
         {trending.map((coin) => (
-          <div>
+          <div className="rounded-div flex justify-between p-4 hover:scale-105 ease-in-out duration-300">
             <div>
               <div>
                 <img src={coin.item.small} alt="/" />
@@ -26,11 +26,14 @@ const Trending = () => {
                   <p>{coin.item.symbol}</p>
                 </div>
               </div>
-            <div>
-                <img className="w-4 nr-2" src="https://assets.coingecko.com/coins/images/1/large/bitcoin.png?1547033579 " alt="/"/>
+              <div>
+                <img
+                  className="w-4 nr-2"
+                  src="https://assets.coingecko.com/coins/images/1/large/bitcoin.png?1547033579 "
+                  alt="/"
+                />
                 <p>{coin.item.price_btc.toFixed(7)}</p>
-            </div>
-
+              </div>
             </div>
           </div>
         ))}
