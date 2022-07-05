@@ -20,6 +20,9 @@ const Trending = () => {
                 <div>
                     <div>
                         <img src={coin.item.small} alt="/" />
+                        <div>
+                            <p>{coin.item.name}</p>
+                        </div>
                     </div>
                 </div>
             </div>
