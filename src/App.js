@@ -8,7 +8,7 @@ import Singup from "./routes/Singup";
 import Account from "./routes/Account";
 import axios from "axios";
 import { useState } from "react";
-
+import CoinPage from "./routes/CoinPage";
 
 
 function App() {
@@ -28,7 +28,10 @@ function App() {
       <Route path="/" element={<Home coins={coins}/>} /> 
       <Route path="/singing" element={<Singin />} /> 
       <Route path="/singup" element={<Singup />} /> 
-      <Route path="/account" element={<Account />} /> 
+      <Route path="/account" element={<Account />} />
+      <Route path="/coin/:coinId" element={<CoinPage/>}>
+        <Route path=":coinId"/>
+      </Route>
       </Routes>
      
     </ThemeProvider>
