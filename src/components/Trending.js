@@ -12,7 +12,20 @@ const Trending = () => {
       console.log(response.data.coins);
     });
   }, []);
-  return <div>Trending</div>;
+  return <div>
+    <h1>Trending coins</h1>
+      <div>
+        {trending.map((coin) => (
+            <div>
+                <div>
+                    <div>
+                        <img src={coin.item.small} alt="/" />
+                    </div>
+                </div>
+            </div>
+        ))}
+      </div>
+  </div>;
 };
 
 export default Trending;
