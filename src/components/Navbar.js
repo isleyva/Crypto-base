@@ -55,12 +55,12 @@ function Navbar() {
         <div className="flex flex-col w-full p-4">
           <Link to="/singin">
             <button className="w-full my-2 p-3 bg-primary text-primary border border-secondary rounded-2xl shadow-xl">
-              Sing In
+              Sign In
             </button>
           </Link>
           <Link to="/singup">
             <button className=" w-full my-2 p-3 bg-button text-btnText rounded-2xl shadow-xl">
-              Sing Up
+              Sign Up
             </button>
           </Link>
         </div>
