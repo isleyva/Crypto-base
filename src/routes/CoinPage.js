@@ -13,7 +13,6 @@ const CoinPage = () => {
         console.log(response.data)
         }
     )
-
   }, [url])
 
 
