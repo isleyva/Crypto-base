@@ -3,8 +3,8 @@ import Navbar from "./components/Navbar";
 import { ThemeProvider } from "./context/ThemeContext";
 import {Route, Routes} from 'react-router-dom'
 import Home from "./routes/Home";
-import Singin from "./routes/Singin";
-import Singup from "./routes/Singup";
+import Signin from "./routes/Signin";
+import Signup from "./routes/Signup";
 import Account from "./routes/Account";
 import axios from "axios";
 import { useState } from "react";
@@ -26,8 +26,8 @@ function App() {
       <Navbar />
       <Routes>
       <Route path="/" element={<Home coins={coins}/>} /> 
-      <Route path="/singing" element={<Singin />} /> 
-      <Route path="/singup" element={<Singup />} /> 
+      <Route path="/sigin" element={<Signin />} /> 
+      <Route path="/signup" element={<Signup />} /> 
       <Route path="/account" element={<Account />} />
       <Route path="/coin/:coinId" element={<CoinPage/>}>
         <Route path=":coinId"/>
