@@ -10,14 +10,18 @@ const CoinPage = () => {
   useEffect(() => {
     axios .get(url).then((response) => {
         setCoin(response.data)
-        console.log(response.data)
+       // console.log(response.data)
         }
     )
   }, [url])
 
 
   return (
-    <div>CoinPage</div>
+    <div className='rounded-div'>
+        <div>
+           <img src={coin.image.small} alt="/"/> 
+        </div>
+    </div>
   )
 }
 
