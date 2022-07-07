@@ -19,7 +19,10 @@ const CoinPage = () => {
   return (
     <div className='rounded-div'>
         <div>
-           <img src={coin.image.small} alt="/"/> 
+           <img src={coin.image?.large} alt="/"/> 
+        </div>
+        <div>
+            <p>{coin.name} price</p>
         </div>
     </div>
   )
