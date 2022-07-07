@@ -23,6 +23,7 @@ const CoinPage = () => {
         </div>
         <div>
             <p>{coin.name} price</p>
+            <p>({coin.symbol.toUpperCase()} / USD)</p>
         </div>
     </div>
   )
