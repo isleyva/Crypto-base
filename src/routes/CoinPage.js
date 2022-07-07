@@ -27,6 +27,7 @@ const CoinPage = () => {
         <div>
           <div>
             <p>{coin.market_data.current_price ? (<p>${ coin.market_data.current_price.usd.toLocaleString() }</p>) : null}</p>
+            <p> 7 days</p>
           </div>
         </div>
       </div>
