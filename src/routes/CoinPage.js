@@ -3,6 +3,8 @@ import axios from 'axios';
 import { Sparklines, SparklinesLine } from 'react-sparklines';
 import { FaTwitter, FaFacebook, FaReddit, FaGithub } from 'react-icons/fa';
 import { useParams } from 'react-router-dom';
+import DOMPurify from 'dompurify';
+
 
 const CoinPage = () => {
   const [coin, setCoin] = useState({});
@@ -143,7 +145,15 @@ const CoinPage = () => {
         
         </div>
         </div>
-        </div>
+         {/* Description */}
+      <div className='py-4'>
+        <p className='text-xl font-bold'>About {coin.name}</p>
+        <p dangerouslySetInnerHTML={{__html: DOMPurify.sanitize(coin.description ? coin.description.en : ''),}} ></p>
+      </div>
+    </div>
+      
+    
+        
         );
         };
         export default CoinPage;
