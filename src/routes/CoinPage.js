@@ -2,9 +2,8 @@ import React, { useState, useEffect } from 'react';
 import axios from 'axios';
 import { Sparklines, SparklinesLine } from 'react-sparklines';
 import { FaTwitter, FaFacebook, FaReddit, FaGithub } from 'react-icons/fa';
+import DOMPurify from 'dompurify'
 import { useParams } from 'react-router-dom';
-import DOMPurify from 'dompurify';
-
 
 const CoinPage = () => {
   const [coin, setCoin] = useState({});
@@ -57,6 +56,7 @@ const CoinPage = () => {
               ) : null}
             </div>
           </div>
+
           <div className='flex justify-between py-4'>
             <div>
               <p className='text-gray-500 text-sm'>24h High</p>
@@ -72,6 +72,7 @@ const CoinPage = () => {
             </div>
           </div>
         </div>
+
         <div>
           <p className='text-xl font-bold'>Market Stats</p>
           <div className='flex justify-between py-4'>
@@ -88,6 +89,7 @@ const CoinPage = () => {
               {coin.tickers ? <p>{coin.liquidity_score.toFixed(2)}</p> : null}
             </div>
           </div>
+
           <div className='flex justify-between py-4'>
             <div>
               <p className='text-gray-500 text-sm'>Price Change (24h)</p>
@@ -142,18 +144,16 @@ const CoinPage = () => {
             <FaReddit />
             <FaGithub />
           </div>
-        
         </div>
-        </div>
-         {/* Description */}
+      </div>
+
+      {/* Description */}
       <div className='py-4'>
         <p className='text-xl font-bold'>About {coin.name}</p>
         <p dangerouslySetInnerHTML={{__html: DOMPurify.sanitize(coin.description ? coin.description.en : ''),}} ></p>
       </div>
     </div>
-      
-    
-        
-        );
-        };
-        export default CoinPage;
+  );
+};
+
+export default CoinPage;
