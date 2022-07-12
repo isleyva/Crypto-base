@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import axios from 'axios';
 import { Sparklines, SparklinesLine } from 'react-sparklines';
-
+import { FaTwitter, FaFacebook, FaReddit, FaGithub } from 'react-icons/fa';
 import { useParams } from 'react-router-dom';
 
 const CoinPage = () => {
@@ -134,9 +134,15 @@ const CoinPage = () => {
               ) : null}
             </div>
           </div>
-        </div>
-        </div>
+          <div className='flex justify-around p-8 text-accent'>
+            <FaTwitter />
+            <FaFacebook />
+            <FaReddit />
+            <FaGithub />
+          </div>
         
+        </div>
+        </div>
         </div>
         );
         };
