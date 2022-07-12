@@ -110,6 +110,30 @@ const CoinPage = () => {
               ) : null}
             </div>
           </div>
+          <div className='flex justify-between py-4'>
+            <div>
+              <p className='text-gray-500 text-sm'>Price Change (30d)</p>
+              {coin.market_data ? (
+                <p>
+                  {coin.market_data.price_change_percentage_30d.toFixed(2)}%
+                </p>
+              ) : null}
+            </div>
+            <div>
+              <p className='text-gray-500 text-sm'>Price Change (60d)</p>
+              {coin.market_data ? (
+                <p>
+                  {coin.market_data.price_change_percentage_60d.toFixed(2)}%
+                </p>
+              ) : null}
+            </div>
+            <div>
+              <p className='text-gray-500 text-sm'>Price Change (1y)</p>
+              {coin.market_data ? (
+                <p>{coin.market_data.price_change_percentage_1y.toFixed(2)}%</p>
+              ) : null}
+            </div>
+          </div>
         </div>
         </div>
         
