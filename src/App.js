@@ -26,7 +26,7 @@ function App() {
       <Navbar />
       <Routes>
       <Route path="/" element={<Home coins={coins}/>} /> 
-      <Route path="/sigin" element={<Signin />} /> 
+      <Route path="/signin" element={<Signin />} /> 
       <Route path="/signup" element={<Signup />} /> 
       <Route path="/account" element={<Account />} />
       <Route path="/coin/:coinId" element={<CoinPage/>}>
