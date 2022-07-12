@@ -53,6 +53,8 @@ const CoinPage = () => {
               {coin.market_data?.market_cap ? (
                 <p>${coin.market_data.total_volume.usd.toLocaleString()}</p>
               ) : null}
+            </div>
+          </div>
         </div>
         </div>
         </div>
