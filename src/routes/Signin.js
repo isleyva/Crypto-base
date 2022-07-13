@@ -6,8 +6,8 @@ import { Link } from "react-router-dom";
 const Signin = () => {
   return (
     <div>
-      <div>
-        <h1>Sign In</h1>
+      <div className="max-w-[400px] mx-auto min-h-[600px] px-4 py-20">
+        <h1 className=" text-2xl font-bold">Sign In</h1>
         <form>
           <div>
             <label>Email</label>
