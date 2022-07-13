@@ -9,14 +9,14 @@ const Signin = () => {
       <div className="max-w-[400px] mx-auto min-h-[600px] px-4 py-20">
         <h1 className=" text-2xl font-bold">Sign In</h1>
         <form>
-          <div>
+          <div className="my-4">
             <label>Email</label>
             <div>
               <input type="email" />
               <AiOutlineMail />
             </div>
           </div>
-          <div>
+          <div className="my-4">
             <label>Password</label>
             <div>
               <input type="password" />
