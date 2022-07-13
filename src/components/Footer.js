@@ -9,37 +9,37 @@ const Footer = () => {
   return (
     <div className='rounded-div mt-8 pt-8 text-primary'>
       <div className='grid md:grid-cols-2'>
-        <div>
+        <div className='flex justify-evenly w-full md:max-w-[300px] uppercase'>
           <div>
-            <h2>Support</h2>
+            <h2 className='font-bold'>Support</h2>
             <ul>
-              <li>Help Center</li>
-              <li>Contact Us</li>
-              <li>API Status</li>
-              <li>Documentation</li>
+              <li className='text-sm py-2'>Help Center</li>
+              <li className='text-sm py-2'>Contact Us</li>
+              <li className='text-sm py-2'>API Status</li>
+              <li className='text-sm py-2'>Documentation</li>
             </ul>
           </div>
           <div>
-            <h2>Info</h2>
+            <h2 className='font-bold'>Info</h2>
             <ul>
-              <li>About Us</li>
-              <li>Careers</li>
-              <li>Invest</li>
-              <li>Legal</li>
+              <li className='text-sm py-2'>About Us</li>
+              <li className='text-sm py-2'>Careers</li>
+              <li className='text-sm py-2'>Invest</li>
+              <li className='text-sm py-2'>Legal</li>
             </ul>
           </div>
         </div>
-        <div>
-          <div>
-             <div>
-                <div>
+        <div className='text-right'>
+          <div className='w-full flex justify-end'>
+             <div className='w-full md:w-[300px] py-4 relative'>
+                <div className='flex justify-center md:justify-center py-4 md:py-0 md:pb-4 mt-[-1rem]'>
                   <ThemeToggle/>
                 </div>
-                <p>Sing up for crypto news</p>
+                <p className='text-center md:text-right font-bold'>Sing up for crypto news</p>
                 <div>
                   <form>
-                    <input type='email' placeholder='Enter your email'/>
-                    <button>Sing Up</button>
+                    <input className='bg-primary border border-input p-2 mr-2 w-full shadow-xl rounded-2xl md:w-auto' type='email' placeholder='Enter your email'/>
+                    <button className='bg-button text-bntText px-4 p-2 w-full rounded-2xl shadow-xl hover:shadow-2xl md:w-auto my-2'>Sing Up</button>
                   </form>
                 </div>
                 <div>
