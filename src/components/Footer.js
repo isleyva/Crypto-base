@@ -32,7 +32,16 @@ const Footer = () => {
         <div>
           <div>
              <div>
-                <div><ThemeToggle/></div>
+                <div>
+                  <ThemeToggle/>
+                </div>
+                <p>Sing up for crypto news</p>
+                <div>
+                  <form>
+                    <input type='email' placeholder='Enter your email'/>
+                    <button>Sing Up</button>
+                  </form>
+                </div>
             </div>
           </div>
         </div>
