@@ -7,8 +7,8 @@ import ThemeToggle from './ThemeToggle'
 
 const Footer = () => {
   return (
-    <div>
-      <div>
+    <div className='rounded-div mt-8 pt-8 text-primary'>
+      <div className='grid md:grid-cols-2'>
         <div>
           <div>
             <h2>Support</h2>
@@ -53,7 +53,7 @@ const Footer = () => {
           </div>
         </div>
       </div>
-      <p> Powered by Coin Gecko</p>
+      <p className='text-center py-4'> Powered by Coin Gecko</p>
     </div>
   )
 }
