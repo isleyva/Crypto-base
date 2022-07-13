@@ -1,5 +1,5 @@
 import React from "react";
-import { AiOutlineMail } from "react-icons/ai";
+import { AiOutlineMail, AiFillLock } from "react-icons/ai";
 
 const Signin = () => {
   return (
@@ -18,7 +18,7 @@ const Signin = () => {
             <label>Password</label>
             <div>
               <input type="password" />
-              <AiOutlineMail />
+              <AiFillLock />
             </div>
           </div>
         </form>
