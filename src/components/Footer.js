@@ -42,6 +42,13 @@ const Footer = () => {
                     <button>Sing Up</button>
                   </form>
                 </div>
+                <div>
+                  <AiOutlineInstagram/>
+                  <FaFacebook/>
+                  <FaGithub/>
+                  <FaTiktok/>
+                  <FaTwitter/>
+                </div>
             </div>
           </div>
         </div>
