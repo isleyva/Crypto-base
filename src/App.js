@@ -9,6 +9,7 @@ import Account from "./routes/Account";
 import axios from "axios";
 import { useState } from "react";
 import CoinPage from "./routes/CoinPage";
+import Footer from "./components/Footer";
 
 
 function App() {
@@ -33,7 +34,7 @@ function App() {
         <Route path=":coinId"/>
       </Route>
       </Routes>
-     
+     <Footer/>
     </ThemeProvider>
   );
 }
