@@ -53,6 +53,7 @@ const Footer = () => {
           </div>
         </div>
       </div>
+      <p> Powered by Coin Gecko</p>
     </div>
   )
 }
