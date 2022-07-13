@@ -1,5 +1,7 @@
 import React from "react";
 import { AiOutlineMail, AiFillLock } from "react-icons/ai";
+import { Link } from "react-router-dom";
+
 
 const Signin = () => {
   return (
@@ -21,7 +23,9 @@ const Signin = () => {
               <AiFillLock />
             </div>
           </div>
+          <button>Sign In</button>
         </form>
+        <p>Don`t have an account? <Link to="/signup"> Sign Up  </Link> </p>
       </div>
     </div>
   );
