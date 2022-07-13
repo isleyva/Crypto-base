@@ -2,7 +2,19 @@ import React from 'react'
 
 const Signin = () => {
   return (
-    <div>Signin</div>
+    <div>
+      <div>
+        <h1>Sign In</h1>
+        <form>
+          <div>
+            <label>Email</label>
+            <div>
+              <input type="email" />
+            </div>
+          </div>
+        </form>
+      </div>
+    </div>
   )
 }
 
