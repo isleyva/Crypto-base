@@ -11,15 +11,15 @@ const Signin = () => {
         <form>
           <div className="my-4">
             <label>Email</label>
-            <div>
-              <input type="email" />
+            <div className="my-2 w-full relative rounded-2xl shadow-xl">
+              <input className="w-full p-2 bg-primary border border-input rounded-2xl" type="email" />
               <AiOutlineMail />
             </div>
           </div>
           <div className="my-4">
             <label>Password</label>
-            <div>
-              <input type="password" />
+            <div  className="my-2 w-full relative rounded-2xl shadow-xl">
+              <input  className="w-full p-2 bg-primary border border-input rounded-2xl" type="password" />
               <AiFillLock />
             </div>
           </div>
