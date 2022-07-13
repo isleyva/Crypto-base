@@ -1,6 +1,5 @@
-import React from 'react'
-import { AiOutlineMail } from 'react-icons/ai'
-
+import React from "react";
+import { AiOutlineMail } from "react-icons/ai";
 
 const Signin = () => {
   return (
@@ -15,10 +14,17 @@ const Signin = () => {
               <AiOutlineMail />
             </div>
           </div>
+          <div>
+            <label>Password</label>
+            <div>
+              <input type="password" />
+              <AiOutlineMail />
+            </div>
+          </div>
         </form>
       </div>
     </div>
-  )
-}
+  );
+};
 
-export default Signin
+export default Signin;
