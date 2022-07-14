@@ -13,19 +13,20 @@ const Signin = () => {
             <label>Email</label>
             <div className="my-2 w-full relative rounded-2xl shadow-xl">
               <input className="w-full p-2 bg-primary border border-input rounded-2xl" type="email" />
-              <AiOutlineMail />
+              <AiOutlineMail className="absolute right-2 top-3 text-gray-400" />
             </div>
           </div>
           <div className="my-4">
             <label>Password</label>
             <div  className="my-2 w-full relative rounded-2xl shadow-xl">
               <input  className="w-full p-2 bg-primary border border-input rounded-2xl" type="password" />
-              <AiFillLock />
+              <AiFillLock className="absolute right-2 top-3 text-gray-400" />
             </div>
           </div>
-          <button>Sign In</button>
+          <button className="w-full my-2 p-3 bg-button text-btnText rounded-2xl shadow-xl">Sign In</button>
         </form>
-        <p>Don`t have an account? <Link to="/signup"> Sign Up  </Link> </p>
+        <p className="my-4">
+          Don`t have an account? <Link to="/signup" className="text-accent"> Sign Up  </Link> </p>
       </div>
     </div>
   );
