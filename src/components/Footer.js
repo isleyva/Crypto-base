@@ -32,7 +32,7 @@ const Footer = () => {
         <div className='text-right'>
           <div className='w-full flex justify-end'>
              <div className='w-full md:w-[300px] py-4 relative'>
-                <div className='flex justify-center md:justify-center py-4 md:py-0 md:pb-4 mt-[-1rem]'>
+                <div className='flex justfiy-center md:justify-center py-4 md:py-0 md:pb-4 mt-[-1rem]'>
                   <ThemeToggle/>
                 </div>
                 <p className='text-center md:text-right font-bold uppercase'>Sing up for crypto news</p>
