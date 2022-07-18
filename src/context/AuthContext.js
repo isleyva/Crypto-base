@@ -5,12 +5,12 @@ import {
   signInWithEmailAndPassword,
   signOut,
   onAuthStateChanged,
-} from "../firebase/auth";
-import { doc, setDoc } from "../firebase/firestore";
+} from "firebase/auth";
+import { doc, setDoc } from "firebase/firestore";
 
-const AuthContext = createContext();
+const UserContext = createContext();
 
-export const AuthProvider = ({ children }) => {
+export const AuthContextProvider = ({ children }) => {
     const [user, setUser] = useState();
  
  
@@ -23,7 +23,7 @@ export const AuthProvider = ({ children }) => {
   const signIn = (email, password) => {
     signInWithEmailAndPassword(auth, email, password);
   }
-    const logOut = () => {
+    const logout = () => {
         return signOut(auth)
     }
 
@@ -36,9 +36,9 @@ export const AuthProvider = ({ children }) => {
     }
     },[])
     return (
-        <AuthContext.Provider value={{ user, signUp, signIn, logOut }}>
+        <UserContext.Provider value={{ signUp, signIn, logout, user}}>
             {children}
-        </AuthContext.Provider>
+        </UserContext.Provider>
     );
 
 };
