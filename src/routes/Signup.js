@@ -1,7 +1,7 @@
 import React from 'react'
 import { AiOutlineMail, AiFillLock } from "react-icons/ai";
 import { Link } from "react-router-dom";
-
+import {UserAuth} from './context/AuthContext'
 
 const Signup = () => {
   return (
