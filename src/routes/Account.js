@@ -1,7 +1,12 @@
 import React from "react";
 import SavedCoin from "../components/SavedCoin";
+import { UserAuth } from "../context/AuthContext";
+import { useNavigate } from "react-router-dom";
 
 const Account = () => {
+  
+  const { user, logout } = UserAuth();
+  const navigate = useNavigate();
   return (
     <div className='max-w-[1140px] mx-auto'>
       <div className='flex justify-between items-center my-12 py-8 rounded-div'>
