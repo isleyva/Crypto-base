@@ -5,8 +5,13 @@ import { Link } from "react-router-dom";
 import { UserAuth } from "../context/AuthContext";
 import { db } from "../firebase";
 import { arrayUnion, doc, updateDoc } from "firebase/firestore";
+import { useState } from "react";
 
 const CoinItem = ({ coin }) => {
+  
+  const [savedCoin, setSavedCoin] = useState(false);
+  const { user } = UserAuth();
+  
   return (
     <tr className="h-[80px] border-b overflow-hidden">
       <td>
