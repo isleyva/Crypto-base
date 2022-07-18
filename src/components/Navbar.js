@@ -35,6 +35,7 @@ function Navbar() {
       {user?.email ? (
         <div>
           <Link to="/account">Account</Link>
+          <button onClick={handleSignOut}>Sign Out</button>
         </div>
       ) : ()}
    
