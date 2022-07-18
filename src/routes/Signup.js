@@ -21,14 +21,18 @@ const Signup = () => {
         <div className="my-4">
           <label>Email</label>
           <div className="my-2 w-full relative rounded-2xl shadow-xl">
-            <input className="w-full p-2 bg-primary border border-input rounded-2xl" type="email" />
+            <input 
+            onChange={(e) => setEmail(e.target.value)}
+            className="w-full p-2 bg-primary border border-input rounded-2xl" type="email" />
             <AiOutlineMail className="absolute right-2 top-3 text-gray-400" />
           </div>
         </div>
         <div className="my-4">
           <label>Password</label>
           <div  className="my-2 w-full relative rounded-2xl shadow-xl">
-            <input  className="w-full p-2 bg-primary border border-input rounded-2xl" type="password" />
+            <input  
+            onChange={(e) => setPassword(e.target.value)}
+            className="w-full p-2 bg-primary border border-input rounded-2xl" type="password" />
             <AiFillLock className="absolute right-2 top-3 text-gray-400" />
           </div>
         </div>
