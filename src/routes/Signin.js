@@ -1,9 +1,30 @@
 import React from "react";
 import { AiOutlineMail, AiFillLock } from "react-icons/ai";
 import { Link } from "react-router-dom";
+import {signIn} from  "../context/AuthContext"
 
 
 const Signin = () => {
+
+  const [email, setEmail] = useState('');
+  const [password, setPassword] = useState('');
+  const [error, setError] = useState('');
+  const navigate = useNavigate();
+
+    const {signIn} = UserAuth ()
+
+    const handleSubmit = async (e) => {
+      e.preventDefault()
+      setError('')
+      try {
+        await signIn(email, password)
+        navigate('/account')
+      } catch (e) {
+        setError(e.message)
+      }
+    }
+
+
   return (
     <div>
       <div className="max-w-[400px] mx-auto min-h-[600px] px-4 py-20">
