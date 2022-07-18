@@ -24,15 +24,15 @@ const Savedcoin = () => {
           </thead>
           <tbody>
             {coins.map((coin) => (
-              <tr key={coin.id}>
+              <tr key={coin.id} className="h-[60px] overflow-hidden">
                 <td>{coin?.rank}</td>
                 <td>
                   <Link to={`/coin/${coin.id}`}>
-                    <div>
-                      <img src={coin?.image} alt="/" />
+                    <div className="flex items-center">
+                      <img src={coin?.image} alt="/" className="w-8 mr-4"/>
                       <div>
-                      <p>{coin?.name}</p>
-                      <p>{coin?.symbol.toUpperCase()}</p>
+                      <p className="hidden sm:table-cell">{coin?.name}</p>
+                      <p className="text-gray-500 text-left text-sm">{coin?.symbol.toUpperCase()}</p>
                       </div>
                     </div>
                   </Link>
