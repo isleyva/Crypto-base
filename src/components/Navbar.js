@@ -15,6 +15,15 @@ function Navbar() {
     setNav(!nav);
   };
 
+  const handleSignOut = async () => {
+    try {
+      await logout();
+      navigate("/");
+    } catch (e) {
+      console.log(e);
+    }
+  }
+
   return (
     <div className="rounded-div flex items-center justify-between h-20 font-bold">
       <Link to="/">
