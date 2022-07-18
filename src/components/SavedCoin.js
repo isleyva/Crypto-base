@@ -36,7 +36,7 @@ const Savedcoin = () => {
                       </div>
                     </div>
                   </Link>
-                  <td>
+                  <td className="pl-8">
                     <AiOutlineClose className="cursor-pointer"/>
                   </td>
                 </td>
