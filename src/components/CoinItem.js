@@ -11,6 +11,24 @@ const CoinItem = ({ coin }) => {
   
   const [savedCoin, setSavedCoin] = useState(false);
   const { user } = UserAuth();
+
+  const coinPath = doc(db, 'users', `${user?.email}`);
+  const saveCoin = async () => {
+    if (user?.email) {
+      setSavedCoin(true);
+      await updateDoc(coinPath, {
+        watchList: arrayUnion({
+          id: coin.id,
+          name: coin.name,
+          image: coin.image,
+          rank: coin.market_cap_rank,
+          symbol: coin.symbol,
+        }),
+      });
+    } else {
+      alert('Please sign in to save a coin to your watch list');
+    }
+  };
   
   return (
     <tr className="h-[80px] border-b overflow-hidden">
