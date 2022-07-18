@@ -2,9 +2,13 @@ import React, { useState } from "react";
 import { Link } from "react-router-dom";
 import ThemeToggle from "./ThemeToggle";
 import { AiOutlineMenu, AiOutlineClose } from "react-icons/ai";
+import {UserAuth} from '../context/AuthContext';
+
 
 function Navbar() {
   const [nav, setNav] = useState(false);
+
+  const {user, logout} = UserAuth();
 
   const handleNav = () => {
     setNav(!nav);
