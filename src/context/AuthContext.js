@@ -35,4 +35,12 @@ export const AuthProvider = ({ children }) => {
         unsubscriber()
     }
     },[])
+    return (
+        <AuthContext.Provider value={{ user, signUp, signIn, logOut }}>
+            {children}
+        </AuthContext.Provider>
+    );
+
 };
+
+
