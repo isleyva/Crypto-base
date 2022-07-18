@@ -11,7 +11,10 @@ import { doc, setDoc } from "../firebase/firestore";
 const AuthContext = createContext();
 
 export const AuthProvider = ({ children }) => {
-  const signUp = (email, password) => {
+    const [user, setUser] = useState();
+ 
+ 
+    const signUp = (email, password) => {
     createUserWithEmailAndPassword(auth, email, password);
     return setDoc(doc(db, "users", email), {
       watchList: [],
@@ -23,4 +26,13 @@ export const AuthProvider = ({ children }) => {
     const logOut = () => {
         return signOut(auth)
     }
+
+    useEffect (() => {
+    const unsubscriber = onAuthStateChanged(auth, (currentUser) => {
+        setUser(currentUser);
+    });
+    return () => {
+        unsubscriber()
+    }
+    },[])
 };
