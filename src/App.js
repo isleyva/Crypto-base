@@ -24,6 +24,7 @@ function App() {
   
   return (
     <ThemeProvider>
+      <AutContextProvider>
       <Navbar />
       <Routes>
       <Route path="/" element={<Home coins={coins}/>} /> 
@@ -35,6 +36,7 @@ function App() {
       </Route>
       </Routes>
      <Footer/>
+      </AutContextProvider>
     </ThemeProvider>
   );
 }
