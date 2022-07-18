@@ -1,5 +1,5 @@
 import React from "react";
-import { AiOutlineStar } from "react-icons/ai";
+import { AiFillStar, AiOutlineStar } from "react-icons/ai";
 import { Sparklines, SparklinesLine } from "react-sparklines";
 import { Link } from "react-router-dom";
 import { UserAuth } from "../context/AuthContext";
@@ -32,8 +32,8 @@ const CoinItem = ({ coin }) => {
   
   return (
     <tr className="h-[80px] border-b overflow-hidden">
-      <td>
-        <AiOutlineStar />
+      <td onClick={saveCoin}>
+        {savedCoin ? <AiFillStar/>: <AiOutlineStar/>}
       </td>
       <td>{coin.market_cap_rank}</td>
       <td>
