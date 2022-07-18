@@ -2,6 +2,9 @@ import React from "react";
 import { AiOutlineStar } from "react-icons/ai";
 import { Sparklines, SparklinesLine } from "react-sparklines";
 import { Link } from "react-router-dom";
+import { UserAuth } from "../context/AuthContext";
+import { db } from "../firebase";
+import { arrayUnion, doc, updateDoc } from "firebase/firestore";
 
 const CoinItem = ({ coin }) => {
   return (
