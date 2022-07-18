@@ -4,6 +4,13 @@ import { Link } from "react-router-dom";
 import {UserAuth} from './context/AuthContext'
 
 const Signup = () => {
+  
+  const [email, setEmail] = useState('')
+  const [password, setPassword] = useState('')
+  const [error, setError] = useState('')
+
+  const {Signup} = UserAuth()
+  
   return (
     <div>
     <div className="max-w-[400px] mx-auto min-h-[600px] px-4 py-20">
