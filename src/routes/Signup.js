@@ -1,6 +1,6 @@
 import React from 'react'
 import { AiOutlineMail, AiFillLock } from "react-icons/ai";
-import { Link } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
 import {UserAuth} from './context/AuthContext'
 
 const Signup = () => {
@@ -8,6 +8,7 @@ const Signup = () => {
   const [email, setEmail] = useState('')
   const [password, setPassword] = useState('')
   const [error, setError] = useState('')
+  const navigate = useNavigate()
 
   const {Signup} = UserAuth()
   
@@ -15,6 +16,7 @@ const Signup = () => {
     <div>
     <div className="max-w-[400px] mx-auto min-h-[600px] px-4 py-20">
       <h1 className=" text-2xl font-bold">Sign Up</h1>
+      {error ? <p className="text-red-500 p-3 my-2">{error}</p> : null}
       <form>
         <div className="my-4">
           <label>Email</label>
