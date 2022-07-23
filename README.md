@@ -8,3 +8,5 @@ CONTENTS OF THIS FILE
  * Deployment
  
 *INTRODUCTION
+
+Crypto base for check the principals cryptocurrencies.
