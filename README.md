@@ -10,3 +10,6 @@ CONTENTS OF THIS FILE
 *INTRODUCTION
 
 Crypto base for check the principals cryptocurrencies.
+
+*REQUERIMENTS
+
