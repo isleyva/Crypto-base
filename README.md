@@ -25,15 +25,15 @@ but if you wnat install the react app by your self there is their own documentat
 
 NPM start for run the app.
 NPM build for install the requeriments of the jsons.
+
 *DEPLOYMENT
 
-One of most intersting things: I´ts deployed by vercel, I recomend their documentation for do it.
+One of most intersting things: I´ts deployed by vercel.
+
+I recomend their documentation for do it. https://nextjs.org/docs/deployment
 
 I invite you to do a code review to improve and add good practices. I hope you like it and that if you do a similar project that you enjoy the process. Greetings and thank you for your time.
 
-*DEPLOYMENT
-
-By Vercel.
 
 
 
